@@ -2,11 +2,10 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
 <style>
 
-.col{
-height: fit-content;
-}
+
 
 
 .container .btn {
@@ -30,12 +29,23 @@ height: fit-content;
   background-color: #374871;;
   color: black;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1440px) {
+  .btn{
+    top: 45%!important;
+  left: 75%!important;
+  font-size: 28px!important;
+  padding: 5px 10px;
+  }
+  img{
+    width: 100%!important;
+  }
+}
+@media only screen and (max-width: 768px) {
   .btn{
     top: 40%!important;
   left: 75%!important;
-  font-size: 10px;
-  padding: 5px 5px;
+  font-size: 16px!important;
+  padding: 5px 10px!important;
   }
   img{
     width: 100%!important;
@@ -43,7 +53,7 @@ height: fit-content;
 }
 @media only screen and (max-width: 425px) {
   .btn{
-    top: 25%!important;
+    top: 35%!important;
   left: 75%!important;
   font-size: 10px!important;
   padding: 3px 3px!important;
@@ -53,12 +63,13 @@ height: fit-content;
     width: 100%!important;
   }
 }
+
 </style>
 </head>
 <body>
 
 
-<div class="container" >
+<div class="container p-5" >
   <div class="row">
     <div class="col" style="text-align: center;">
       <img src="img/Webinar.jpg" class="img-fluid" style="width:50%;text-align: center;height:auto;">
