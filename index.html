@@ -1,118 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IREU Education</title>
-    <link rel="icon" href="img/ireu_fav.png" type="image/icon type">
-    <!-- cdn -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-body, html {
-    height: 100%;
-    /* padding: 10px; */
+.col{
+height: fit-content;
 }
 
-div.fill-screen {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    text-align: center;
-}
 
-img.make-it-fit {
-    max-width: 100%;
-    max-height: 100%;
-}
-.text {
-  text-align: center;
+.container .btn {
   position: absolute;
   top: 50%;
-  left: 80%;
-  
+  left: 64%;
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center;
+  
 }
-.form-group {
-    margin-bottom: 2px!important;
+
+.container .btn:hover {
+  background-color: #374871;;
+  color: black;
+}
+@media only screen and (max-width: 1024px) {
+  .btn{
+    top: 40%!important;
+  left: 75%!important;
+  font-size: 10px;
+  padding: 5px 5px;
+  }
+  img{
+    width: 100%!important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .btn{
+    top: 25%!important;
+  left: 75%!important;
+  font-size: 10px!important;
+  padding: 3px 3px!important;
+  width: 80px!important;
+  }
+  img{
+    width: 100%!important;
+  }
 }
 </style>
+</head>
 <body>
-  <!-- <div class='fill-screen'>
-    <img class='make-it-fit' 
-         src='img/Webinar.jpg'>
-</div> -->
-<!-- <div class="text">
-  <button type="button"  class="btn" style="background-color: #374871;color:#ffff;" data-toggle="modal" data-target="#exampleModal">Register</button>
-</div> -->
-<!-- <div class="container">
+
+
+<div class="container" >
   <div class="row">
-    <div class="col">
-      <img src="img/Webinar.jpg" alt="">
+    <div class="col" style="text-align: center;">
+      <img src="img/Webinar.jpg" class="img-fluid" style="width:50%;text-align: center;height:auto;">
+      <button type="button" class="btn">Register Now</button>
     </div>
   </div>
-</div> -->
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <img src="img/Webinar.jpg" alt="" width="80%" height="60%">
-      </div>
-    
-    </div>
-  </div>
-
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Student Name</label>
-            <input type="text" class="form-control" id="student_name">
-          </div>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Email</label>
-            <input type="email" class="form-control" id="email">
-          </div>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Mobile No:</label>
-            <input type="number" class="form-control" id="mobile_no">
-          </div>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">College Name</label>
-            <input type="text" class="form-control" id="college_name">
-          </div>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Course Name</label>
-            <input type="text" class="form-control" id="course_name">
-          </div>
-        </form>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+ 
 </div>
-    
+
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
 </html>
